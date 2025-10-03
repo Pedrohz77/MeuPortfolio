@@ -214,9 +214,10 @@ h1{
     height: 238px;
     margin-right: 20px;
     margin-top: -153px;
-    height: 300px;
+    height: 350px;
     border-radius: 50%;
     box-shadow: 0 0 50px #00fff4;
+    transform: rotate(90deg); /* gira 90 graus */
 }
 
 
@@ -326,4 +327,89 @@ form button:hover {
 
 form button:active {
     transform: translateY(1px);
+}
+
+.projetos {
+  padding: 60px 20px;
+  text-align: center;
+  
+}
+
+.projetos h2 {
+  font-size: 75px;
+  font-family: Lalezar;
+  margin-bottom: 10px;
+  color: #14a9c6;
+  text-shadow: 0 0 100px #00fff4;
+}
+
+.projetos p {
+  font-size: 1.1rem;
+  color: #14a9c6;
+  text-shadow: 0 0 100px #00fff4;
+  margin-bottom: 40px;
+}
+
+/* Grid de projetos */
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Cards de projeto */
+.card-projeto {
+  background-color: #000000;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 0px 20px #00fff4;
+}
+
+.card-projeto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.card-projeto img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza horizontalmente */
+}
+
+.card-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.card-info p {
+  font-size: 30px;
+  font-family: lalezar;
+  color: #ffffff;
+  
+}
+
+.card-info a {
+  margin-top: -20px;
+  text-decoration: none;
+  color: #000000;
+  padding: 20px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  border-radius: 29px;
+  box-shadow: 0px 0px 5px #00fff4;
+  background-color: #30b5cf;
+  
+}
+
+.card-info a:hover {
+  background-color: #11d4f7;
 }
